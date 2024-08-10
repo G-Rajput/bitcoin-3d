@@ -14,7 +14,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
         </div>
       </div>
       <div style={{ height: '200vh' }}>
-        <div className="dot">
+        <div className="dot right">
           <h1>What is Bitcoin?</h1>
           <h3>Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer Bitcoin network without the need for intermediaries.</h3>
         </div>
@@ -26,7 +26,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
         </div>
       </div>
       <div style={{ height: '200vh' }}>
-        <div className="dot">
+        <div className="dot right">
           <h1>Bitcoin Wallets</h1>
           <h3>Bitcoin wallets come in various forms including hardware, software, and paper wallets. Choose the one that best fits your needs to safely store your Bitcoin.</h3>
         </div>
@@ -38,7 +38,7 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
         </div>
       </div>
       <div style={{ height: '200vh' }}>
-        <div className="dot">
+        <div className="dot right">
           <h1>Understanding Bitcoin Price Movements</h1>
           <h3>Bitcoin prices are influenced by various factors including supply and demand, investor behavior, market sentiment, and geopolitical events. Stay updated to make informed decisions.</h3>
         </div>

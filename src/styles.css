@@ -36,12 +36,12 @@ body {
   position: fixed;
   overflow: hidden;
   overscroll-behavior-y: none;
- 
+ background-color: #000;
   /* background: linear-gradient(135deg, #3a1c71, #d76d77, #c2129c);
   background: linear-gradient(135deg, #00f260, #0575e6);
   background: linear-gradient(135deg, #ff416c, #ff4b2b);
   background: linear-gradient(135deg, #00b09b, #96c93d); */
-  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  /* background: linear-gradient(135deg, #7f00ff, #e100ff); */
 
 
 
@@ -145,4 +145,15 @@ a{
 }
 h3{
   color: #fff;
+}
+.stars{
+  position: absolute;
+  height: 100vh;
+  z-index: -1;
+  width: 100%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  float: inline-end;
 }

@@ -1,29 +1,29 @@
 
-// // import './App.css'
-// import About from './components/About'
-// import CanvasContainer from './components/CanvasContainer'
-// import Header from './components/Header'
-// import Hero from './components/Hero'
-// import More from './components/More'
+// // // import './App.css'
+// // import About from './components/About'
+// // import CanvasContainer from './components/CanvasContainer'
+// // import Header from './components/Header'
+// // import Hero from './components/Hero'
+// // import More from './components/More'
 
-// function App() {
+// // function App() {
 
-//   return (
-//     <div className=''>
-//       <div className='h-screen w-full fixed top-8 '>
+// //   return (
+// //     <div className=''>
+// //       <div className='h-screen w-full fixed top-8 '>
 
-//       <CanvasContainer />
-//       </div>
-//       <Header />
-//       <Hero />
-//       <About />
-//       <More />
+// //       <CanvasContainer />
+// //       </div>
+// //       <Header />
+// //       <Hero />
+// //       <About />
+// //       <More />
 
-//     </div>
-//   )
-// }
+// //     </div>
+// //   )
+// // }
 
-// export default App
+// // export default App
 
 
 
@@ -33,6 +33,8 @@ import { Environment, OrbitControls } from "@react-three/drei"
 import Model from "./components/Model"
 import Overlay from "./components/Overlay"
 import Header from './components/Header'
+import StarsCanvas from "./components/Stars"
+import EarthCanvas from "./components/Earth"
 
 export default function App() {
   const overlay = useRef()
@@ -41,6 +43,8 @@ export default function App() {
   return (
     <>
     <Header />
+    <StarsCanvas />
+    {/* <EarthCanvas /> */}
       <Canvas shadows eventSource={document.getElementById("root")} eventPrefix="client"  >
         {/* <ambientLight intensity={1} /> */}
         <directionalLight position={[10, 10, 5]} intensity={1} />
@@ -48,10 +52,15 @@ export default function App() {
         {/* <OrbitControls enableZoom={false}/> */}
         <Suspense fallback={null}>
           <Model scroll={scroll}/>
-          <Environment preset="studio" />
+          <Environment preset="warehouse" />
         </Suspense>
       </Canvas>
       <Overlay ref={overlay} caption={caption} scroll={scroll} />
     </>
   )
 }
+
+
+
+
+
